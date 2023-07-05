@@ -1,5 +1,6 @@
 import Header from "./Header";
 import CartOverView from "../features/cart/CartOverview";
+import { Outlet } from "react-router-dom";
 
 const AppLayout = () => {
 	return (
@@ -7,7 +8,8 @@ const AppLayout = () => {
 			<Header />
 
 			<main>
-				<h1>CONTENT</h1>
+				<h1>COTENT</h1>
+				<Outlet />
 			</main>
 
 			<CartOverView />
